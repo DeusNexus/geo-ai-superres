@@ -1,0 +1,144 @@
+# -------------------------
+# General Python ignores
+# -------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# -------------------------
+# Virtual Environments
+# -------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# -------------------------
+# Package management
+# -------------------------
+.Python
+.pdm.toml
+.pdm-python
+.pdm-build/
+__pypackages__/
+poetry.lock
+Pipfile.lock
+uv.lock
+
+# -------------------------
+# Build & Distribution
+# -------------------------
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# -------------------------
+# Logs & Coverage
+# -------------------------
+*.log
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+*.cover
+*.py,cover
+.pytest_cache/
+.hypothesis/
+
+# -------------------------
+# Jupyter & Notebooks
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# IDEs & Tooling
+# -------------------------
+.spyderproject
+.spyproject
+.ropeproject
+.pytype/
+.pyre/
+.mypy_cache/
+.dmypy.json
+.ruff_cache/
+.pybuilder/
+.pytest_cache/
+cython_debug/
+.idea/  # (Uncomment only if you're using PyCharm and want to ignore all configs)
+
+# -------------------------
+# Flask / Django / Celery
+# -------------------------
+instance/
+.webassets-cache
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+celerybeat-schedule
+celerybeat.pid
+
+# -------------------------
+# Documentation
+# -------------------------
+docs/_build/
+site/
+
+# -------------------------
+# Output & Artifacts
+# -------------------------
+*.manifest
+*.spec
+
+# -------------------------
+# Project-specific ignores
+# -------------------------
+
+# Data folders (use cloud or external storage for large datasets)
+data/raw/
+data/processed/
+data/masks/
+data/tiles/
+data/cache/
+data/temp/
+tmp/
+temp/
+
+# Model outputs and checkpoints
+checkpoints/
+models/
+runs/
+outputs/
+artifacts/
+logs/
+
+# Secrets (if you use any for APIs, etc.)
+secrets.env
+*.key
+*.pem
+*.crt
+
+# VSCode config (optional)
+.vscode/
+
+# Custom
+/tasks
