@@ -20,40 +20,40 @@ This project aims to enhance the spatial resolution of satellite imagery and ana
 - `outputs/`: Maps, plots, and reports generated during analysis.
 
 ```
-    geo-ai-superres/
-    │
-    ├── data/
-    │   ├── raw/                 # Original satellite imagery (Sentinel-1, Sentinel-2, DEM)
-    │   ├── processed/           # Preprocessed data (cloud-masked, normalized)
-    │   ├── superres/            # Super-resolved outputs
-    │   ├── temporal/            # Time-series datasets
-    │   └── masks/               # NDVI, land cover, slope, water bodies
-    │
-    ├── notebooks/
-    │   ├── 01_data_preparation.ipynb
-    │   ├── 02_superresolution_training.ipynb
-    │   ├── 03_land_cover_classification.ipynb
-    │   ├── 04_temporal_analysis.ipynb
-    │   └── 05_urban_growth_prediction.ipynb
-    │
-    ├── models/
-    │   ├── superres_model.pth
-    │   ├── landcover_model.pth
-    │   └── urban_growth_model.pth
-    │
-    ├── src/
-    │   ├── data_processing/
-    │   ├── models/
-    │   ├── utils/
-    │   └── visualization/
-    │
-    ├── outputs/
-    │   ├── maps/
-    │   ├── charts/
-    │   └── reports/
-    │
-    ├── requirements.txt
-    └── README.md
+geo-ai-superres/
+│
+├── data/
+│   ├── raw/                 # Original satellite imagery (Sentinel-1, Sentinel-2, DEM)
+│   ├── processed/           # Preprocessed data (cloud-masked, normalized)
+│   ├── superres/            # Super-resolved outputs
+│   ├── temporal/            # Time-series datasets
+│   └── masks/               # NDVI, land cover, slope, water bodies
+│
+├── notebooks/
+│   ├── 01_data_preparation.ipynb
+│   ├── 02_superresolution_training.ipynb
+│   ├── 03_land_cover_classification.ipynb
+│   ├── 04_temporal_analysis.ipynb
+│   └── 05_urban_growth_prediction.ipynb
+│
+├── models/
+│   ├── superres_model.pth
+│   ├── landcover_model.pth
+│   └── urban_growth_model.pth
+│
+├── src/
+│   ├── data_processing/
+│   ├── models/
+│   ├── utils/
+│   └── visualization/
+│
+├── outputs/
+│   ├── maps/
+│   ├── charts/
+│   └── reports/
+│
+├── requirements.txt
+└── README.md
 ```
 
 ## Installation
@@ -62,7 +62,7 @@ This project aims to enhance the spatial resolution of satellite imagery and ana
 git clone https://github.com/deusnexus/geo-ai-superres.git
 cd geo-ai-superres
 pip install -r requirements.txt
-
+```
 
 ## Model Architecture
 
