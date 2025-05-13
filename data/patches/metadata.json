@@ -1,0 +1,15 @@
+{
+    "crs": "EPSG:3857",
+    "patch_km": 1,
+    "patch_size_meters": 1000,
+    "projection": "Web Mercator",
+    "highlight_bbox_epsg3857": {
+        "xmin": 12809890.4777,
+        "ymin": -967539.904,
+        "xmax": 12842414.4333,
+        "ymax": -935130.604
+    },
+    "total_patches_on_land": 5979,
+    "highlighted_patches_count": 1019,
+    "patch_id_format": "patch_00000_uuid (e.g., patch_00042_a1b2c3d4)"
+}
