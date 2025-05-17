@@ -1,0 +1,76 @@
+.
+├── data
+│   ├── logs
+│   │   └── patch_download_log.csv
+│   ├── masks
+│   │   ├── bali_merged.geojson
+│   │   └── SHP_BALI
+│   │       ├── KAB. BADUNG
+│   │       ├── KAB. BANGLI
+│   │       ├── KAB. BULELENG
+│   │       ├── KAB. GIANYAR
+│   │       ├── KAB. JEMBRANA
+│   │       ├── KAB. KARANGASEM
+│   │       ├── KAB. KLUNGKUNG
+│   │       ├── KAB. TABANAN
+│   │       └── KOTA DENPASAR
+│   ├── patches
+│   │   ├── highlighted_patches.geojson
+│   │   ├── metadata.json
+│   │   └── patches_on_land.geojson
+│   ├── processed
+│   │   └── sentinel2
+│   │       ├── patch_00032_5925311e_20151230T024015.355000+0000_res1024.json
+│   │   ...
+│   │       ├── patch_00060_4ced72c0_20250423T024027.062000+0000_res1024.json
+│   │       ├── patch_00060_4ced72c0_20250423T024027.062000+0000_res1024.tiff
+│   │       ├── patch_00060_4ced72c0_20250511T024031.545000+0000_res1024.json
+│   │       └── patch_00060_4ced72c0_20250511T024031.545000+0000_res1024.tiff
+│   ├── raw
+│   │   └── sentinel2
+│   │       ├── patch_00032_5925311e_20151230T024015.355000+0000_res1024.tiff
+│   │       ├── patch_00032_5925311e_20160309T024010.788000+0000_res1024.tiff
+│   │       ├── patch_00032_5925311e_20160408T024013.300000+0000_res1024.tiff
+│   │       ...
+│   │       ├── patch_00060_4ced72c0_20250423T024027.062000+0000_res1024.tiff
+│   │       ├── patch_00060_4ced72c0_20250501T024034.822000+0000_res1024.tiff
+│   │       └── patch_00060_4ced72c0_20250511T024031.545000+0000_res1024.tiff
+│   ├── superres
+│   └── temporal
+├── LICENSE
+├── models
+│   ├── landcover_model.pth
+│   ├── superres_model.pth
+│   └── urban_growth_model.pth
+├── notebooks
+│   ├── 00_01_shp_bali.ipynb
+│   ├── 00_02_patches.ipynb
+│   ├── 00_03_visualize_patches.ipynb
+│   ├── 00_sentinel.ipynb
+│   ├── 00_sentinel_patches.ipynb
+│   ├── 00_sentinel_patches_v2.ipynb
+│   ├── 01_data_preparation.ipynb
+│   ├── 02_superresolution_training.ipynb
+│   ├── 03_land_cover_classification.ipynb
+│   ├── 04_temporal_analysis.ipynb
+│   ├── 05_urban_growth_prediction.ipynb
+│   ├── batch_jobs
+│   │   └── batch_jobs_log.csv
+│   └── downloads
+├── outputs
+│   ├── charts
+│   ├── maps
+│   └── reports
+├── README.md
+├── requirements.txt
+├── src
+│   ├── data_processing
+│   ├── models
+│   ├── utils
+│   └── visualization
+├── tasks
+│   └── stage_01.md
+├── TASKS.md
+
+
+49 directories, 8578 files
