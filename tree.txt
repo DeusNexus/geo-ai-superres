@@ -1,40 +1,26 @@
+# ~/geo-ai-superres tree -L 3 > tree.txt
 .
 ├── data
 │   ├── logs
 │   │   └── patch_download_log.csv
 │   ├── masks
-│   │   ├── bali_merged.geojson
-│   │   └── SHP_BALI
-│   │       ├── KAB. BADUNG
-│   │       ├── KAB. BANGLI
-│   │       ├── KAB. BULELENG
-│   │       ├── KAB. GIANYAR
-│   │       ├── KAB. JEMBRANA
-│   │       ├── KAB. KARANGASEM
-│   │       ├── KAB. KLUNGKUNG
-│   │       ├── KAB. TABANAN
-│   │       └── KOTA DENPASAR
+│   │   ├── building
+│   │   ├── dem_srtmgl1
+│   │   ├── ndvi
+│   │   ├── ndwi
+│   │   ├── road
+│   │   └── shp_bali
 │   ├── patches
 │   │   ├── highlighted_patches.geojson
 │   │   ├── metadata.json
 │   │   └── patches_on_land.geojson
 │   ├── processed
+│   │   ├── sentinel1
 │   │   └── sentinel2
-│   │       ├── patch_00032_5925311e_20151230T024015.355000+0000_res1024.json
-│   │   ...
-│   │       ├── patch_00060_4ced72c0_20250423T024027.062000+0000_res1024.json
-│   │       ├── patch_00060_4ced72c0_20250423T024027.062000+0000_res1024.tiff
-│   │       ├── patch_00060_4ced72c0_20250511T024031.545000+0000_res1024.json
-│   │       └── patch_00060_4ced72c0_20250511T024031.545000+0000_res1024.tiff
 │   ├── raw
+│   │   ├── dem
+│   │   ├── sentinel1
 │   │   └── sentinel2
-│   │       ├── patch_00032_5925311e_20151230T024015.355000+0000_res1024.tiff
-│   │       ├── patch_00032_5925311e_20160309T024010.788000+0000_res1024.tiff
-│   │       ├── patch_00032_5925311e_20160408T024013.300000+0000_res1024.tiff
-│   │       ...
-│   │       ├── patch_00060_4ced72c0_20250423T024027.062000+0000_res1024.tiff
-│   │       ├── patch_00060_4ced72c0_20250501T024034.822000+0000_res1024.tiff
-│   │       └── patch_00060_4ced72c0_20250511T024031.545000+0000_res1024.tiff
 │   ├── superres
 │   └── temporal
 ├── LICENSE
@@ -49,14 +35,15 @@
 │   ├── 00_sentinel.ipynb
 │   ├── 00_sentinel_patches.ipynb
 │   ├── 00_sentinel_patches_v2.ipynb
+│   ├── 01_00_urban_mask.ipynb
+│   ├── 01_01_dem_mask.ipynb
 │   ├── 01_data_preparation.ipynb
 │   ├── 02_superresolution_training.ipynb
 │   ├── 03_land_cover_classification.ipynb
 │   ├── 04_temporal_analysis.ipynb
 │   ├── 05_urban_growth_prediction.ipynb
-│   ├── batch_jobs
-│   │   └── batch_jobs_log.csv
-│   └── downloads
+│   └── batch_jobs
+│       └── batch_jobs_log.csv
 ├── outputs
 │   ├── charts
 │   ├── maps
@@ -71,6 +58,61 @@
 ├── tasks
 │   └── stage_01.md
 ├── TASKS.md
+├── tree.txt
+└── venv
+    ├── bin
+    │   ├── activate
+    │   ├── activate.csh
+    │   ├── activate.fish
+    │   ├── Activate.ps1
+    │   ├── debugpy
+    │   ├── debugpy-adapter
+    │   ├── dotenv
+    │   ├── eio
+    │   ├── f2py
+    │   ├── fonttools
+    │   ├── ipython
+    │   ├── ipython3
+    │   ├── jupyter
+    │   ├── jupyter-kernel
+    │   ├── jupyter-kernelspec
+    │   ├── jupyter-migrate
+    │   ├── jupyter-run
+    │   ├── jupyter-troubleshoot
+    │   ├── lsm2bin
+    │   ├── mercantile
+    │   ├── normalizer
+    │   ├── numpy-config
+    │   ├── pip
+    │   ├── pip3
+    │   ├── pip3.12
+    │   ├── pyftmerge
+    │   ├── pyftsubset
+    │   ├── pygmentize
+    │   ├── pyproj
+    │   ├── python -> python3
+    │   ├── python3 -> /usr/bin/python3
+    │   ├── python3.12 -> python3
+    │   ├── rio
+    │   ├── sentinelhub
+    │   ├── sentinelhub.aws
+    │   ├── sentinelhub.config
+    │   ├── sentinelhub.download
+    │   ├── tiff2fsspec
+    │   ├── tiffcomment
+    │   ├── tifffile
+    │   ├── tqdm
+    │   ├── ttx
+    │   └── utm-converter
+    ├── include
+    │   └── python3.12
+    ├── lib
+    │   └── python3.12
+    ├── lib64 -> lib
+    ├── pyvenv.cfg
+    └── share
+        ├── jupyter
+        ├── man
+        └── xyzservices
 
-
-49 directories, 8578 files
+44 directories, 71 files
